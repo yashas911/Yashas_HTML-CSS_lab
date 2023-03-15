@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>visibility example</title>
+        <style>
+            .A, .C, .E{
+                font-size: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                color: rgba(55, 184, 161, 0.666);
+                background-color: rgb(165, 239, 28);
+            }
+
+            .B{
+                display: none;
+            }
+            .A:hover + .B{
+                display: flex;
+            }
+
+            .D{
+                visibility: hidden;
+            }
+
+            .C:hover + .D{
+                visibility: visible;
+            }
+
+            .F{
+                visibility:collapse;
+            }
+
+            .E:hover +.F{
+                visibility: visible;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <p class="A">Hello click on me</p>
+        <span class="B">MInd your own buisness</span>
+
+        <p class="C">With great power comes</p>
+        <span class="D">Comes great responsibility</span>
+
+        <p class="E">I can do this</p>
+        <span class="F"> All day</span>
+
+
+    </body>
+</html>
